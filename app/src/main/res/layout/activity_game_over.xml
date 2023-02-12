@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background4"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:fontFamily="@font/almendra_sc"
+        android:textColor="@color/white"
+        android:text="@string/gameover"
+        android:textSize="56dp" />
+
+    <TextView
+        android:id="@+id/gameovercause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aclonica"
+        android:text="die from strong RABBIT"
+        android:textSize="20dp"
+        tools:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/almendra_sc"
+
+        android:onClick="goToGame"
+        android:text="@string/play_again"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/playagain"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="219dp"
+        android:onClick="goToHome"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/home" />
+
+
+</RelativeLayout>

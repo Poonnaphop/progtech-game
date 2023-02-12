@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mighty">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/peko_walk1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/peko_walk1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mighty">
+        <activity android:name=".credit2"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".credit"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".Gamepass"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".Gameover"
+            android:label="@string/title_activity_mainactivity"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".Gameover2"
+            android:label="@string/title_activity_mainactivity"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".Gameplay"
+            android:label="@string/title_activity_mainactivity"
+            android:theme="@style/Theme.Mighty.noActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_mainactivity"
+            android:theme="@style/Theme.Mighty.noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

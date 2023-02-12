@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nextlevel"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Level Pass!!"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200px"
+        android:onClick="goToHome"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/home" />
+    <Button
+        android:id="@+id/nextlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/almendra_sc"
+        android:onClick="goToGame"
+        android:layout_marginBottom="500dp"
+        android:text="@string/nextLevel"
+        android:textColor="@color/black"
+        android:textSize="57sp" />
+
+
+
+</RelativeLayout>
